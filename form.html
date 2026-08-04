@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+    <h2>Form Pendaftaran</h2>
+        <table>
+            <tr>
+                <td><label>Nama:</label></td>
+                <td><input type="text" placeholder="Nama" required></td>
+            </tr>
+            <tr>
+                <td><label>No. HP:</label></td>
+                <td><input type="number" placeholder="No. HP" required></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email" placeholder="Email" required></td>
+            </tr>
+            <tr>
+                <td><label>Password:</label></td>
+                <td><input type="password" placeholder="Password" required></td>
+            </tr>
+            <tr>
+                <td><label>Tanggal Lahir:</label></td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td><label>Jenis Kelamin:</label></td>
+                <td>
+                    <label><input type="radio" name="jenis_kelamin" value="L" required> Laki-laki</label>
+                    <label><input type="radio" name="jenis_kelamin" value="P"> Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Hobi:</label>
+                </td>
+                <td>
+                    <label><input type="checkbox" name="hobi" value="coding"> Coding</label>
+                    <label><input type="checkbox" name="hobi" value="gaming"> Gaming</label>
+                    <label><input type="checkbox" name="hobi" value="membaca"> Membaca</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Kelas:</label></td>
+                <td>
+                    <select name="kelas" required>
+                        <option value="">-- Pilih Kelas --</option>
+                        <option value="x-rpl">X RPL</option>
+                        <option value="xi-rpl">XI RPL</option>
+                        <option value="xii-rpl">XII RPL</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
