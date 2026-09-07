@@ -1,0 +1,233 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #0D0D0D; 
+    color: white; 
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #000000;
+    border-bottom: 1px solid #D4AF37;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  nav .logo {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    color: gold; 
+    letter-spacing: 1px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #D4AF37; 
+  }
+
+  header.hero {
+    text-align: center;
+    padding: 100px 20px 80px;
+    background: radial-gradient(circle at top, #1a1a1a 0%, #000000 70%);
+  }
+
+  header.hero .tagline {
+    display: inline-block;
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  header.hero h1 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    text-align: center;
+    font-size: 3.2rem;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  header.hero h1 span {
+    color: gold;
+  }
+
+  header.hero p {
+    color: #B3B3B3;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+  }
+
+  header.hero .btn {
+    display: inline-block;
+    background-color: #D4AF37;
+    color: black;
+    padding: 14px 34px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  header.hero .btn:hover {
+    background-color: white;
+    transform: translateY(-3px);
+  }
+
+
+  header.hero h1,
+  .kategori h2,
+  .kategori-title h3 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+  }
+
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+
+  .section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .section-heading .label {
+    color: #D4AF37;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .section-heading h2 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+    color: white;
+  }
+
+  .kategori {
+    margin-bottom: 60px;
+  }
+
+  .kategori-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .kategori-title h3 {
+    color: gold;
+    font-size: 1.4rem;
+    white-space: nowrap;
+  }
+
+  .kategori-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #333333;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+
+  .menu-grid .item {
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 22px;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+  .menu-grid .item:hover {
+    border-color: #D4AF37;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.15);
+  }
+
+  .item .badge {
+    display: inline-block;
+    background-color: rgba(212, 175, 55, 0.12);
+    color: #D4AF37;
+    font-size: 0.7rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  .item h4 {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 6px;
+  }
+
+  .item p.deskripsi {
+    color: #999999;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .item .harga-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #262626;
+    padding-top: 14px;
+  }
+
+  .item .harga {
+    color: gold;
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #000000;
+    border-top: 1px solid #D4AF37;
+    color: #999999;
+    font-size: 0.85rem;
+  }
+
+  footer span {
+    color: #D4AF37;
+  }
