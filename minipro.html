@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil Siswa</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5e5e5;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #111;
+    margin: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+.card audio {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.card audio::-webkit-media-controls-panel {
+    background-color: #f1f1f1;
+}
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="Slamet kopling.jpg" alt="Slamet Kopleng">
+        <div class="card-content">
+            <h2>PROFIL SISWA</h2>
+            <p>Nama : Slamet Kopleng</p>
+            <p>Kelas : X RPL 1</p>
+            <p>Hobi : Coding</p>
+            <p>Cita-cita : Software Engineer</p>
+            <audio controls>
+                <source src="./slamet.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Mang Oleh.png" alt="Mang Oleh">
+        <div class="card-content">
+            <h2>PROFIL SISWA</h2>
+            <p>Nama : Mang Oleh</p>
+            <p>Kelas : X RPL 4</p>
+            <p>Hobi : Desain UI</p>
+            <p>Cita-cita : UI/UX Designer</p>
+            <audio controls>
+                <source src="./odading.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Budi Kapal.png" alt="Budi Kapal Lawd">
+        <div class="card-content">
+            <h2>PROFIL SISWA</h2>
+            <p>Nama : Budi Kapal Lawd</p>
+            <p>Kelas : X PG 1</p>
+            <p>Hobi : Game Development</p>
+            <p>Cita-cita : Game Developer</p>
+            <audio controls>
+                <source src="./budi.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
