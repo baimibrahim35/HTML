@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum 1 - Manipulasi DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 16px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+
+        button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="judulUtama">Aku Belum Berubah</h1>
+    <button id="btnTeks">Ubah Teks</button>
+    <button id="btnWarna">Ubah Warna</button>
+    <button id="btnUkuran">Ubah Ukuran</button>
+    <button id="btnReset">Reset</button>
+    <script>
+        const judulUtama = document.getElementById('judulUtama');
+        const btnTeks = document.getElementById('btnTeks');
+        const btnWarna = document.getElementById('btnWarna');
+        const btnUkuran = document.getElementById('btnUkuran');
+        const btnReset = document.getElementById('btnReset');
+        const teksAwal = judulUtama.textContent;
+        const warnaAwal = 'black';
+        const ukuranAwal = '32px';
+        btnTeks.addEventListener('click', () => {
+            judulUtama.textContent = 'Aku Sudah Berubah!';
+        });
+        btnWarna.addEventListener('click', () => {
+            judulUtama.style.color = '#e74c3c';
+        });
+        btnUkuran.addEventListener('click', () => {
+            judulUtama.style.fontSize = '50px';
+        });
+        btnReset.addEventListener('click', () => {
+            judulUtama.textContent = teksAwal;
+            judulUtama.style.color = warnaAwal;
+            judulUtama.style.fontSize = ukuranAwal;
+        });
+    </script>
+</body>
+</html>

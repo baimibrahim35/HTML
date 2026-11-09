@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum 2</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        #angka { font-size: 64px; }
+        button { font-size: 20px; padding: 10px 20px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Counter</h2>
+    <div id="angka">0</div>
+    <button id="tambah">+ Tambah</button>
+    <button id="kurang">- Kurang</button>
+    <button id="reset">Reset</button>
+
+    <script>
+        let hitung = 0;
+        const angka = document.getElementById('angka');
+
+        function update() {
+            angka.textContent = hitung;
+            angka.style.color = hitung > 0 ? 'green' : (hitung < 0 ? 'red' : 'black');
+        }
+
+        document.getElementById('tambah').onclick = () => { hitung++; update(); };
+        document.getElementById('kurang').onclick = () => { if (hitung > 0) hitung--; update(); };
+        document.getElementById('reset').onclick = () => { hitung = 0; update(); };
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum 3</title>
+    <style>
+        body { font-family: Arial; max-width: 400px; margin: 40px auto; }
+        li { margin: 8px 0; }
+        button { margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <h2>Daftar Belanja</h2>
+    <p>Jumlah barang: <b id="jumlah">0</b></p>
+    <input type="text" id="barang" placeholder="Nama barang">
+    <button id="btnTambah">Tambah</button>
+    <ul id="daftar"></ul>
+<script>
+    const barang = document.getElementById('barang');
+    const daftar = document.getElementById('daftar');
+    const jumlah = document.getElementById('jumlah');
+    function update() { jumlah.textContent = daftar.children.length; }
+    function tambah() {
+        if (!barang.value.trim()) return alert('Isi nama barang dulu!');
+         const li = document.createElement('li');
+         li.textContent = barang.value;
+        const btnHapus = document.createElement('button');
+        btnHapus.textContent = 'Hapus';
+        btnHapus.onclick = () => { li.remove(); update(); };
+        li.appendChild(btnHapus);
+        daftar.appendChild(li);
+        barang.value = '';
+        update();
+    }
+    document.getElementById('btnTambah').onclick = tambah;
+    barang.onkeydown = (e) => { if (e.key === 'Enter') tambah(); };
+</script>
+</body>
+</html>
